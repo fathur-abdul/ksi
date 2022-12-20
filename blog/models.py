@@ -3,7 +3,7 @@ from django.utils.text import slugify
 
 # Create your models here.
 class Post(models.Model):
-    title = models.CharField(max_length=25)
+    title = models.CharField(max_length=255)
     body = models.TextField()
     email = models.EmailField(blank=True)
     slug = models.SlugField(blank=True, editable=False)

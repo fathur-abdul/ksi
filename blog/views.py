@@ -7,15 +7,14 @@ from .models import Post
 def index(request):
     db = Post.objects.all()
     context = {
-        'Judul' : 'Blog Saya',
+        'Judul' : 'Blog',
         'h1' : 'About Me',
-        'Nama' : 'Valen Rionald',
-        'NPM' : '1204060',
-        'Asal' : 'Kuningan, Jawa Barat',
-        'Email' : 'vrionald@gmail.com',
-        'HP' : '089522910966',
+        'Nama' : 'Fathur Abdul Halim',
+        'NPM' : '1204075',
+        'Asal' : 'Bandung',
+        'Email' : 'fathurabdul7@gmail.com',
+        'HP' : '085846167488',
         'Umur' : '20',
-        'Desc' : 'Mahasiswa, Jomblo, Tersesat',
         'title':'Blog',
         'heading':'Blog',
         'subheading':'postingan',
